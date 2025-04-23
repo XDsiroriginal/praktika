@@ -11,4 +11,13 @@
 .top-header {
     width: 100%;
     display: flex;
+    justify-content: space-around;
+}
+
+.top-nav {
+    width: 663px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
