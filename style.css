@@ -11,7 +11,7 @@
 .top-header {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .top-nav {
@@ -20,4 +20,29 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-bottom: 80px;
+    margin-right: 120px;
+}
+
+.main-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.element3 {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 500px;
+    top: 200px;
+    animation-name: element3_animation;
+    animation: element3_animation 5s linear infinite;
+    transition: all 0.5s ease;
+}
+
+@keyframes element3_animation {
+    0% {
+        transform: rotate(360deg);
+    }
 }
