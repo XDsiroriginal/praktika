@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 1415px;
+    height: 786px;
+}
+
+.top-header {
+    width: 100%;
+    display: flex;
+}
