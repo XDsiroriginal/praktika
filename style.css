@@ -6,11 +6,15 @@
 body {
     padding-bottom: 20px; 
     padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .header {
     width: 1415px;
     height: 786px;
+    margin-bottom: 280px;
 }
 
 .top-header {
@@ -120,6 +124,46 @@ body {
     margin-bottom: 36px;
 }
 
+.section02 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 280px;
+    align-items: center;
+}
+
+.thousand-02 {
+    width: 660px;
+    height: 540px;
+}
+
+.section02-title {
+    font-size: 36px;
+    font-weight: bold;
+    width: 481px;
+}
+
+.section02-text {
+    width: 450px;
+    color: #7D7987;
+}
+
+.section02-text-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    height: 333px;
+}
+
+/* selection 3 */
+
+.section03 {
+    width: 100%;
+    display: flex;
+    margin-bottom: 280px;
+}
+
 @keyframes rotate {
     0% {
         transform: rotate(360deg);
@@ -154,6 +198,7 @@ body {
     .header {
         width: 100%;
         height: auto;
+        margin-bottom: 80px;
     }
 
     .travel-img {
@@ -177,6 +222,7 @@ body {
 
     .main-header {
         display: flex;
+        justify-content: center;
     }
 
     .burger-menu {
@@ -235,5 +281,25 @@ body {
     .holiday-finder_input-block_input {
         width: 150px; 
         height: 38px; 
+    }
+
+    .thousand-02 {
+        display: none;
+    }
+
+    .section02-title {
+        width: 90%;
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .section02-text {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .section02-text-block {
+        align-items: center;    
+        justify-content: center;
     }
 }
