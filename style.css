@@ -3,6 +3,15 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: 'MyFont';
+    src: url('font/PlayfairDisplay-Regular.ttf') format('truetype');
+}
+
+p {
+    font-family: "MyFont";
+}
+
 body {
     padding-bottom: 20px; 
     padding-top: 20px;
@@ -325,6 +334,7 @@ body {
     width: 80px;
     color: #FB8F1D;
     margin-right: 150px;
+    font-weight: bold;
 }
 
 .section06-main {
