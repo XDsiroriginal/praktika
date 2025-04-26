@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+div {
+    max-width: 1600px;
+}
+
 @font-face {
     font-family: 'MyFont';
     src: url('font/PlayfairDisplay-Regular.ttf') format('truetype');
@@ -10,6 +14,31 @@
 
 p {
     font-family: "MyFont";
+    transition: 0.2s;
+}
+
+a {
+    transition: 0.2s;
+}
+
+img {
+    transition: 0.2s;
+}
+
+img:hover {
+    background: white;
+    opacity: 0.6;
+    -webkit-box-shadow: 10px 10px 10px 10px rgba(34, 60, 80, 0.15);
+    -moz-box-shadow: 10px 10px 10px 10px rgba(34, 60, 80, 0.15);
+    box-shadow: 10px 10px 10px 10px rgba(34, 60, 80, 0.15);
+}
+
+a:hover {
+    font-size: 20px;
+}
+
+p:hover {
+    color: #FB8F1D;
 }
 
 body {
