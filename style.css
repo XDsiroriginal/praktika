@@ -12,41 +12,13 @@ div {
     src: url('font/PlayfairDisplay-Regular.ttf') format('truetype');
 }
 
-p {
-    font-family: "MyFont";
-    transition: 0.2s;
-}
-
-a {
-    transition: 0.2s;
-}
-
-img {
-    transition: 0.2s;
-}
-
-img:hover {
-    background: white;
-    opacity: 0.6;
-    -webkit-box-shadow: 10px 10px 10px 10px rgba(34, 60, 80, 0.15);
-    -moz-box-shadow: 10px 10px 10px 10px rgba(34, 60, 80, 0.15);
-    box-shadow: 10px 10px 10px 10px rgba(34, 60, 80, 0.15);
-}
-
-a:hover {
-    font-size: 20px;
-}
-
-p:hover {
-    color: #FB8F1D;
-}
-
 body {
     padding-bottom: 20px; 
     padding-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #f8f8f8;
 }
 
 .header {
@@ -64,7 +36,13 @@ body {
 .button {
     width: 132px; 
     height: 44px;
-    transition: 0.5s;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.button:hover, 
+.form-button:hover {
+    animation: rotate-shake 0.4s ease-in-out infinite;
 }
 
 .top-nav {
@@ -76,7 +54,6 @@ body {
     margin-bottom: 80px;
     margin-right: 120px;
 }
-
 
 .main-header {
     width: 100%;
@@ -95,19 +72,7 @@ body {
 .form-button {
     width: 180px; 
     height: 52px;
-    transition: 0.5s;
-}
-
-.form-button:hover {
-    width: 190px; 
-    height: 60px;
-    animation: button 1s linear infinite;
-}
-
-.button:hover {
-    width: 140px; 
-    height: 50px;
-    animation: button 1s linear infinite;
+    transition: all 0.3s ease;
 }
 
 .header_text {
@@ -146,7 +111,7 @@ body {
     margin-bottom: 50px;
 }
 
-.main-header_text-text{
+.main-header_text-text {
     font-size: 64px; 
     font-weight: bold; 
     color: #202336;
@@ -156,10 +121,19 @@ body {
     width: 220px; 
     height: 52px; 
     border: 0.8px solid #AFB0B9; 
-    border-radius: 6px; display: flex; 
+    border-radius: 6px; 
+    display: flex; 
     align-items: center; 
     justify-content: space-around; 
     margin-bottom: 36px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.holiday-finder_input-block_input:hover {
+    border-color: #FB8F1D;
+    box-shadow: 0 2px 8px rgba(251, 143, 29, 0.2);
 }
 
 .section02 {
@@ -194,7 +168,7 @@ body {
     height: 333px;
 }
 
-/* selection 3 */
+/* section 3 */
 
 .section03 {
     width: 100%;
@@ -224,6 +198,11 @@ body {
     font-size: 18px;
     font-weight: bold;
     margin-right: 80px;
+    transition: all 0.3s ease;
+}
+
+.section03-text:hover {
+    color: #e67e22;
 }
 
 .section03-main {
@@ -236,9 +215,17 @@ body {
     width: 261px;
     height: 337px;
     border-radius: 8px;
+    transition: all 0.3s ease;
+    filter: brightness(0.95);
 }
 
-/* selection 4 */
+.section03-image:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    filter: brightness(1);
+}
+
+/* section 4 */
 
 .section04 {
     width: 100%;
@@ -252,7 +239,6 @@ body {
     flex-direction: column;
     justify-content: center;
     margin-right: 80px;
-    
 }
 
 .section04-right-image {
@@ -274,7 +260,7 @@ body {
     margin-bottom: 33px;
 }
 
-/*selection 5 */
+/* section 5 */
 
 .section05 {
     width: 100%;
@@ -333,9 +319,16 @@ body {
 .section05-right-image {
     width: 416px;
     height: 522px;
+    transition: all 0.3s ease;
+    border-radius: 8px;
 }
 
-/* selection 6 */
+.section05-right-image:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* section 6 */
 
 .section06 {
     display: flex;
@@ -364,6 +357,11 @@ body {
     color: #FB8F1D;
     margin-right: 150px;
     font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.section06-header-text:hover {
+    color: #e67e22;
 }
 
 .section06-main {
@@ -375,6 +373,13 @@ body {
     width: 266px;
     height: 446px;
     margin-right: 20px;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+.section06-main-image:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
 }
 
 /* footer */
@@ -413,6 +418,15 @@ body {
 
 .footer-footer-mage {
     margin-left: 35px;
+    transition: all 0.3s ease;
+    filter: grayscale(100%);
+    opacity: 0.7;
+}
+
+.footer-footer-mage:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.1);
 }
 
 .footer-main-section-long-text {
@@ -438,6 +452,12 @@ body {
     font-size: 18px;
     color: #848484;
     margin: 6px;
+    transition: all 0.2s ease;
+}
+
+.footer-main-section-text:hover {
+    color: #FB8F1D;
+    transform: translateX(5px);
 }
 
 .palka-02 {
@@ -462,25 +482,28 @@ body {
     color: #848484;
 }
 
+@keyframes rotate-shake {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(-5deg);
+    }
+    75% {
+        transform: rotate(3deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
 @keyframes rotate {
     0% {
         transform: rotate(360deg);
     }
-}
-
-@keyframes button {
-   0% {
-    transform: rotate(0deg);
-   }
-   33% {
-    transform: rotate(5deg);
-   }
-   66% {
-    transform: rotate(-5deg);
-   }
-   100% {
-    transform: rotate(0deg);
-   }
 }
 
 @media (max-width: 1420px) {
@@ -550,7 +573,7 @@ body {
         font-size: 20px;
     }
 
-    .main-header_text-text{
+    .main-header_text-text {
         font-size: 54px; 
         font-weight: bold; 
         color: #202336;
@@ -605,8 +628,7 @@ body {
         justify-content: center;
     }
 
-    /* selection 3 */
-
+    /* section 3 */
 
     .section03 {
         margin-bottom: 80px;
@@ -639,7 +661,7 @@ body {
         width: 90%; 
     }
 
-    /* selection 4 */
+    /* section 4 */
 
     .section04 {
         margin-bottom: 80px;
@@ -662,7 +684,7 @@ body {
         width: 90%;
     }
 
-    /* selection 5 */
+    /* section 5 */
 
     .section05 {
         margin-bottom: 80px;
@@ -690,12 +712,12 @@ body {
         width: 90%;
     }
 
-    .section05-right-image{
+    .section05-right-image {
         width: 300px;
         height: 376px;
     }
 
-    /* selection 6 */
+    /* section 6 */
 
     .section06 {
         margin-bottom: 80px;
@@ -774,4 +796,4 @@ body {
     .footer-main-section-long-text {
         display: none;
     }
-}
+}   
